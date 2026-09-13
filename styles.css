@@ -15,3 +15,24 @@
 footer{padding:24px 0;background:#0b182b;color:#aab8ca;font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{text-decoration:none}
 @media(max-width:980px){nav a:not(.nav-cta){display:none}.hero-grid,.split,.band-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.service-list{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.container{width:min(100% - 28px,1140px)}.cards,.process,.checks{grid-template-columns:1fr}.section{padding:64px 0}.hero{padding-top:64px}h1{font-size:2.7rem}}
+
+
+/* V3.1 internal page hero refinement */
+.page-hero{
+  padding:64px 0 48px;
+}
+.page-hero h1{
+  max-width:950px;
+  font-size:clamp(2.6rem,5vw,4.4rem);
+}
+.page-hero .lead{
+  max-width:820px;
+}
+@media(max-width:640px){
+  .page-hero{
+    padding:52px 0 40px;
+  }
+  .page-hero h1{
+    font-size:2.45rem;
+  }
+}
