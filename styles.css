@@ -65,3 +65,26 @@ footer{padding:24px 0;background:#0b182b;color:#aab8ca;font-size:.88rem}.footer-
 @media(max-width:640px){
   .buyer-grid,.fit-options,.proof-grid{grid-template-columns:1fr}
 }
+
+
+/* V4.1 — mobile review refinements */
+@media(max-width:980px){
+  .hero-grid,.split,.band-grid,.contact-grid{gap:32px}
+}
+@media(max-width:640px){
+  .section{padding:54px 0}
+  .hero{padding:54px 0 60px}
+  .band{padding:56px 0}
+  .hero-actions{margin-top:26px}
+  .trust-row{margin-top:24px;gap:10px 16px}
+  .hero-card{padding:24px}
+  .buyer-grid,.cards,.process{gap:14px}
+  .card,.buyer-card,.service-block,.responsibility-card,.process>div{padding:22px}
+  .process strong{margin-bottom:16px}
+  .fit-options{gap:10px}
+  .fit-options span{padding:11px 12px}
+  .proof-strip{padding:24px 0}
+  .proof-grid{gap:0}
+  .proof-grid>div{padding:14px 0;border-bottom:1px solid var(--line)}
+  .proof-grid>div:last-child{border-bottom:none}
+}
