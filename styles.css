@@ -108,3 +108,5 @@ main{flex:1}
   .proof-grid>div:nth-last-child(-n+2){border-bottom:none}
   .mobile-menu-panel{max-width:calc(100vw - 28px)}
 }
+
+.service-resource{margin-top:16px}.service-resource a{color:var(--navy);font-weight:750;text-decoration:none}.service-resource a:hover{text-decoration:underline}
