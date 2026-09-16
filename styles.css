@@ -88,3 +88,23 @@ footer{padding:24px 0;background:#0b182b;color:#aab8ca;font-size:.88rem}.footer-
   .proof-grid>div{padding:14px 0;border-bottom:1px solid var(--line)}
   .proof-grid>div:last-child{border-bottom:none}
 }
+
+/* V4.2 — final responsive, accessibility and polish pass */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+.skip-link{position:fixed;left:14px;top:10px;z-index:200;transform:translateY(-160%);background:var(--navy);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:750;box-shadow:var(--shadow)}
+.skip-link:focus{transform:translateY(0)}
+.footer-links a:hover{color:#fff}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.skip-link{transition:none}}
+@media(max-width:640px){
+  .split{gap:20px}
+  .split>div:first-child h2{margin-bottom:0}
+  .split>.prose>p:first-child{margin-top:0}
+  .split>.checks{margin-top:0}
+  .band-grid{gap:24px}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
+  .proof-grid>div{padding:14px 0;border-bottom:1px solid var(--line)}
+  .proof-grid>div:nth-last-child(-n+2){border-bottom:none}
+  .mobile-menu-panel{max-width:calc(100vw - 28px)}
+}
