@@ -110,3 +110,13 @@ main{flex:1}
 }
 
 .service-resource{margin-top:16px}.service-resource a{color:var(--navy);font-weight:750;text-decoration:none}.service-resource a:hover{text-decoration:underline}
+
+
+/* V4.6 — strategic consolidation, ideal-client clarity, conversion and social polish */
+.audience-intro{margin-top:0}.audience-intro strong{color:var(--navy)}.audience-note{color:var(--muted);margin-top:16px}.fit-heading{margin:0 0 18px;color:var(--navy);font-weight:800}.fit-checks{margin-top:0}.next-step-box{margin-top:28px;padding:20px 22px;background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px}.next-step-box p{margin:0;color:var(--muted)}.next-step-box .next-step-kicker{margin-bottom:6px;color:var(--navy);font-weight:800}.service-resource a{display:inline-block}.resource-meta{color:var(--muted);font-size:.88rem}
+@media(max-width:640px){
+  h1{font-size:clamp(2.15rem,10vw,2.7rem);line-height:1.08}
+  h2{font-size:clamp(1.7rem,7.5vw,2.15rem);line-height:1.12}
+  .page-hero h1{font-size:clamp(2rem,9vw,2.45rem)}
+  .audience-fit-grid{gap:26px}
+}
