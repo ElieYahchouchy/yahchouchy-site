@@ -137,3 +137,49 @@ main{flex:1}
 @media(max-width:420px){
   .about-portrait{width:156px}
 }
+
+
+/* V4.8 — modern technology cues, proof tiles and restrained interaction polish */
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.service-card .mini{margin-bottom:0}
+.service-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:linear-gradient(145deg,var(--accent-soft),#fff);border:1px solid rgba(47,110,169,.18);color:var(--accent);flex:0 0 auto;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.service-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.tech-strip{position:relative;overflow:hidden;padding:58px 0;background:linear-gradient(135deg,#f7fbfe 0%,#eef6fc 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tech-strip:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,var(--accent),#7fb8e4)}
+.tech-strip-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.tech-copy h2{font-size:clamp(1.7rem,3vw,2.35rem);margin-bottom:14px}
+.tech-copy p:last-child{margin-bottom:0;color:var(--muted)}
+.tech-chips{display:flex;flex-wrap:wrap;gap:11px;align-content:center}
+.tech-chip{display:inline-flex;align-items:center;min-height:42px;padding:9px 14px;border:1px solid rgba(47,110,169,.20);border-radius:999px;background:rgba(255,255,255,.86);color:var(--navy);font-size:.9rem;font-weight:700;box-shadow:0 5px 18px rgba(16,35,63,.045)}
+.proof-strip{padding:30px 0;background:#fff}
+.proof-grid-modern{gap:14px}
+.proof-grid-modern>div{border-right:none;padding:0}
+.proof-item{position:relative;overflow:hidden;min-height:146px;padding:20px 20px 18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,#fbfdff)}
+.proof-item:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--navy),var(--accent))}
+.proof-grid .proof-value{font-size:1.3rem;letter-spacing:-.02em;margin-bottom:2px}
+.proof-grid .proof-label{display:block;color:var(--navy);font-size:.91rem;font-weight:750;margin-bottom:6px}
+.proof-grid .proof-item small{display:block;color:var(--muted);font-size:.82rem;line-height:1.45}
+.button,.card,.buyer-card,.service-block,.process>div,.proof-item,.tech-chip,.fit-options span,.primary-nav a,.band-links a{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background-color .18s ease,color .18s ease,opacity .18s ease}
+.primary-nav a:not(.nav-cta){position:relative}
+.primary-nav a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;border-radius:2px;background:var(--accent);transition:right .18s ease}
+.primary-nav a[aria-current="page"]:after{right:0}
+@media(hover:hover) and (pointer:fine){
+  .card:hover,.buyer-card:hover,.service-block:hover,.process>div:hover,.proof-item:hover{transform:translateY(-4px);border-color:rgba(47,110,169,.30);box-shadow:0 16px 34px rgba(16,35,63,.08)}
+  .service-card:hover .service-icon{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tech-chip:hover{transform:translateY(-2px);border-color:rgba(47,110,169,.42);box-shadow:0 9px 22px rgba(16,35,63,.075)}
+  .button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(16,35,63,.12)}
+  .primary-nav a:not(.nav-cta):hover:after{right:0}
+  .band-links a:hover{transform:translateX(3px);text-decoration:none}
+}
+@media(max-width:980px){.tech-strip-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:640px){
+  .tech-strip{padding:44px 0}
+  .tech-chips{gap:9px}
+  .tech-chip{min-height:38px;padding:8px 12px;font-size:.85rem}
+  .proof-grid-modern{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .proof-grid-modern>div{border-bottom:none;padding:0}
+  .proof-item{min-height:132px;padding:17px 16px 15px}
+  .proof-grid .proof-value{font-size:1.15rem}
+}
+@media(max-width:390px){.proof-grid-modern{grid-template-columns:1fr}.proof-item{min-height:auto}}
+@media(prefers-reduced-motion:reduce){.button,.card,.buyer-card,.service-block,.process>div,.proof-item,.tech-chip,.fit-options span,.primary-nav a,.band-links a,.primary-nav a:after,.service-icon{transition:none!important}.card:hover,.buyer-card:hover,.service-block:hover,.process>div:hover,.proof-item:hover,.tech-chip:hover,.button:hover,.band-links a:hover{transform:none!important}}
